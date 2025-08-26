@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     audioPlayer.style.opacity = 0;
 
     try {
-      const response = await fetch("http://89.111.172.168:8000/tts", {
+      const response = await fetch("https://89.111.172.168:8000/tts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, language, speaker, speed })
